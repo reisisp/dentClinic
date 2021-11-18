@@ -1,6 +1,7 @@
 import React from 'react';
 import { AboutUs } from './components/AboutUs/List/List';
 import { Contacts } from './components/Contacts/Contacts';
+import { FeedbackForm } from './components/FeedbackForm/FeedbackForm';
 import { Footer } from './components/Footer/Footer';
 import { MainScreen } from './components/MainScreen/MainScreen';
 import { PriceList } from './components/PriceList/PriceList';
@@ -15,6 +16,7 @@ function App() {
         <AboutUs />
         {/* <Slider /> */}
         <PriceList />
+        <FeedbackForm />
         <Contacts />
       </div>
       <Footer />

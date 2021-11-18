@@ -5,9 +5,9 @@ import styles from './FeedbackForm.module.scss';
 
 export const FeedbackForm = () => {
 
-    const test = () => {
-        console.log('test')
-    }
+    // const test = () => {
+    //     console.log('test')
+    // }
 
     return (
         <div className={styles.box}>
@@ -21,7 +21,7 @@ export const FeedbackForm = () => {
                         <FeedbackInput type='text' placeholder='Имя и Фамилия' />
                         <FeedbackInput type='tel' placeholder='+7' />
                     </div>
-                    <Btn onClick={test}>Записаться на прием</Btn>
+                    <Btn>Записаться на прием</Btn>
                 </div>
             </div>
 

@@ -1,0 +1,70 @@
+@import "../../styles/colors";
+@import "../../styles/mixins";
+
+.box {
+    background-color: $background-footer;
+    height: 416px;
+}
+
+.wrapper {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer {
+    padding: 100px 120px;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        display: inline-block;
+        @include box(179px, 60px);
+    }
+    &__info {
+        display: grid;
+        grid-template-rows: repeat(2, max-content);
+        grid-row-gap: 48px;
+    }
+    &__nav {
+        width: 530px;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-column-gap: 90px;
+    }
+}
+
+.nav {
+    @include grid-row(5, 24px);
+    &__link {
+        &:hover .nav__text {
+            color: $link-footer-hov;
+        }
+        &:active .nav__text {
+            color: $link-footer-act;
+        }
+    }
+    &__text {
+        @include text(1rem, 500, 24px, $link-footer);
+    }
+}
+
+.contacts {
+    display: grid;
+    grid-template-rows: repeat(2, max-content);
+    grid-row-gap: 48px;
+    &__elem {
+        display: grid;
+        grid-template-rows: repeat(2, max-content);
+        grid-template-columns: repeat(2, max-content);
+        grid-row-gap: 24px;
+        grid-column-gap: 24px;
+    }
+}
+
+.logo {
+    @include box(100%);
+}
+
+.text {
+    @include text(1rem, 400, 24px, $p-footer);
+}

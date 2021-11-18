@@ -1,0 +1,54 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.table {
+    height: 550px;
+    overflow: auto;
+    &__elem {
+        padding: 12px 159px 12px 0;
+        @include flexbox;
+        @include justify-content(space-between);
+        align-items: center;
+    }
+    &__text {
+        @include text(1rem, 400, 24px, $p-main);
+        max-width: 750px;
+    }
+    &::-webkit-scrollbar {
+        width: 24px;
+        &-track {
+            background: $track;
+            @include border-radius(12px);
+        }
+        &-thumb {
+            background: $thumb;
+            box-shadow: 0px 4px 20px $thumb-shadow;
+            @include border-radius(12px);
+            &:hover {
+                background: $thumb-hover;
+                box-shadow: inset 1px 1px 10px $thumb-shadow;
+            }
+        }
+    }
+}
+
+.box {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 18px;
+        background-color: white;
+        opacity: 0.8;
+        margin-right: 24px;
+    }
+    &::before {
+        top: 0;
+    }
+    &::after {
+        bottom: 0;
+    }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.card-box {
+    @include box(360px, 260px);
+}
+
+.card {
+    @include box(100%);
+    @include grid-row(2, 24px, min-content);
+    justify-items: center;
+    &__img {
+        width: 140px;
+        height: 140px;
+    }
+    &__description {
+        @include text(1rem, 400,24px, $p-main);
+        white-space: pre-line;
+        text-align: center;
+    }
+}

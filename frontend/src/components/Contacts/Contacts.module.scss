@@ -1,0 +1,36 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.box {
+    padding-left: 140px;
+    @include flexbox;
+    @include justify-content(space-between);
+}
+
+.contacts {
+    padding: 140px 0;
+    display: grid;
+    grid-row-gap: 72px;
+    &__heading {
+        @include text(3rem, 700, 56px, $header);
+    }
+    &__text {
+        @include text(1rem, 400, 24px, $p-main);
+    }
+    &__svg {
+        @include box(24px);
+        fill: $svg-blue;
+    }
+    &__elem {
+        @include grid-column(2, 24px);
+    }
+    &__elems {
+        display: grid;
+        grid-row-gap: 48px;
+    }
+}
+
+.map {
+    height: 624px;
+    width: 50%;
+}

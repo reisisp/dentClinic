@@ -1,0 +1,74 @@
+@import '_fonts';
+
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(../assets/fonts/Inter/static/Inter-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'), url(../assets/fonts/Inter/static/Inter-Bold.ttf);
+    font-weight: 700;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+}
+
+html {
+    font-size: $base-font-size;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+} 
+
+h1 {
+    font-weight: 700;
+    line-height: 56px;
+    font-size: 3rem;
+    color: #020131;
+}
+
+h2 {
+    font-weight: 700;
+    line-height: 52px;
+    font-size: 2.25rem;
+    color: #020131;
+}
+
+h3 {
+    font-weight: 700;
+    line-height: 29px;
+    font-size: 1.5rem;
+    color: #020131;
+}
+
+p {
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 1rem;
+    color: #38374E;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}

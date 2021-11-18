@@ -1,0 +1,71 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box($width, $height: $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin grid-column($columns, $gap, $content: max-content) {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat($columns, $content);
+    grid-column-gap: $gap;
+}
+
+@mixin grid-row($rows, $gap, $content: max-content) {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    grid-template-rows: repeat($rows, $content);
+    grid-row-gap: $gap;
+}
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin justify-content($value: flex-start) {
+    @if $value == flex-start {
+        -webkit-box-pack: start;
+        -moz-box-pack: start;
+        -ms-flex-pack: start;
+    } @else if $value == flex-end {
+        -webkit-box-pack: end;
+        -moz-box-pack: end;
+        -ms-flex-pack: end;
+    } @else if $value == space-between {
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+    } @else if $value == space-around {
+        -ms-flex-pack: distribute;
+    } @else {
+        -webkit-box-pack: $value;
+        -moz-box-pack: $value;
+        -ms-flex-pack: $value;
+    }
+    -webkit-justify-content: $value;
+    justify-content: $value;
+}
+
+@mixin text($size, $weight, $height, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $height;
+    color: $color;
+}
+
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}

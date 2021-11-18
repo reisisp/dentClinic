@@ -1,0 +1,19 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+.info-box {
+    margin-top: 147px;
+}
+
+.info {
+    @include grid-column(2, 40px);
+    &__work-time {
+        @include grid-column(2, 20px);
+    }
+    &__address {
+        @include grid-column(2, 20px);
+    }
+    &__text {
+        @include text(1rem, 400, 24px, $main-page-secondary)
+    }
+}

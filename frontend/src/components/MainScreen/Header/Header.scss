@@ -1,0 +1,50 @@
+@import '../../../styles/mixins';
+@import '../../../styles/colors';
+
+
+.header-container {
+    padding: 50px 120px;
+}
+
+.header {
+    @include grid-column(3, 138px);
+    &__logo {
+        @include box(179px, 60px);
+    }
+    &__phone {
+        margin-left: 22px;
+    }
+}
+
+.logo__img {
+    @include box(100%);
+}
+
+.nav {
+    @include grid-column(5, 40px);
+    &__link {
+        border-bottom: 1px solid $invisible;
+        &:hover {
+            border-bottom: 1px solid $main-page;
+        }
+        &:active {
+            border-bottom: 1px solid $btn;
+            & .nav__text {
+                color: $btn;
+            }
+        }
+    }
+    &__text {
+        @include text(1rem, 500, 24px, $main-page);
+    }
+}
+
+.phone {
+    @include grid-column(2, 12px);
+    &__img {
+        @include box(16px);
+    }
+    &__number {
+        @include text(1rem, 400, 24px, $main-page);
+    }
+}

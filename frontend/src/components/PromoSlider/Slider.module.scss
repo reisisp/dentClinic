@@ -1,0 +1,44 @@
+@import "../../styles/mixins";
+@import "../../styles/colors";
+
+.slider {
+    margin: 72px 0 42px 0;
+    overflow: hidden;
+    &__box {
+        padding-top: 100px;
+        margin: 100px 140px;
+    }
+    &__name {
+        @include text(3rem, 700, 56px, $header);
+        text-align: start;
+    }
+}
+
+.slide {
+    &__next {
+        opacity: 0.3;
+        transform: translateX(760px);
+    }
+    &__prev {
+        opacity: 0.3;
+        transform: translateX(-760px);
+    }
+    &__active {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+}
+
+ol{
+    list-style:none;
+    width:100%;
+}
+ol li{
+    background: #888;
+    border-radius: 50%;
+    display: inline-block;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+}

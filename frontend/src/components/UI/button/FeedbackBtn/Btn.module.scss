@@ -2,7 +2,7 @@
 @import "../../../../styles/colors";
 
 .btn {
-    padding: 20px 72px;
+    padding: 20px 0;
     @include border-radius(40px);
     cursor: pointer;
     background-color: $btn-promo-background;

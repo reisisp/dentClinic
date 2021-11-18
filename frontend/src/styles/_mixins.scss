@@ -35,6 +35,21 @@
     display: flex;
 }
 
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
 @mixin justify-content($value: flex-start) {
     @if $value == flex-start {
         -webkit-box-pack: start;

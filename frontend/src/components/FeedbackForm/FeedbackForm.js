@@ -5,8 +5,8 @@ import styles from './FeedbackForm.module.scss';
 
 export const FeedbackForm = () => {
 
-    const chlen = () => {
-        console.log('chlen')
+    const test = () => {
+        console.log('test')
     }
 
     return (
@@ -21,7 +21,7 @@ export const FeedbackForm = () => {
                         <FeedbackInput type='text' placeholder='Имя и Фамилия' />
                         <FeedbackInput type='tel' placeholder='+7' />
                     </div>
-                    <Btn onClick={chlen}>Записаться на прием</Btn>
+                    <Btn onClick={test}>Записаться на прием</Btn>
                 </div>
             </div>
 

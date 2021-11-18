@@ -1,11 +1,11 @@
 import React from 'react';
-import './Btn.scss'
+import styles from './Btn.module.scss'
 
 
 export const Btn = ({ children, ...props }) => {
     return (
-        <button {...props} className='btn'>
-            <span className='btn__text'>
+        <button {...props} className={styles.btn}>
+            <span className={styles.btn__text}>
                 {children}
             </span>
         </button>

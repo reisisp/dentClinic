@@ -2,21 +2,21 @@ import React from 'react';
 import { Body } from './Body/Body';
 import { Footer } from './Footer/Footer';
 import { Header } from './Header/Header';
-import './MainScreen.scss'
+import styles from './MainScreen.module.scss';
 
 
 export const MainScreen = () => {
     return (
-        <div className='mainscreen-box' >
+        <div className={styles.box} >
             <Header />
-            <div className='mainscreen__content'>
+            <div className={styles.mainscreen__content}>
                 <Body />
                 <Footer />
             </div>
-            <div className='mainscreen__hiden'>
-                <div className="action-card">
-                    <h1 className="action-card__heading">Первый прием - <br />бесплатно!</h1>
-                    <p className="action-card__info">Оставьте свои контактные данные,<br />чтобы записаться на бесплатную<br />консультацию в нашей стоматологии.</p>
+            <div className={styles.mainscreen__hiden}>
+                <div >
+                    <h1 >Первый прием - <br />бесплатно!</h1>
+                    <p >Оставьте свои контактные данные,<br />чтобы записаться на бесплатную<br />консультацию в нашей стоматологии.</p>
                     <form action="#">
                         <input type="text" name="" id="" />
                         <input type="tel" />
@@ -26,4 +26,4 @@ export const MainScreen = () => {
             </div>
         </div>
     );
-};
+}

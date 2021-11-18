@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card } from '../Card/Card';
-import './List.scss';
+import styles from './List.module.scss';
 
 export const AboutUs = () => {
     const imgPath = (imgName) => require(`../../../assets/img/aboutUsIcons/${imgName}.png`).default;
@@ -14,9 +14,9 @@ export const AboutUs = () => {
     ]
 
     return (
-        <div className='aboutUs-box'>
-            <h1 className='aboutUs__heading'>Почему нас выбирают:</h1>
-            <div className='aboutUs__elems'>
+        <div className={styles.box}>
+            <h1 className={styles.aboutUs__heading}>Почему нас выбирают:</h1>
+            <div className={styles.aboutUs__elems}>
                 {cards.map(card =>
                     <Card key={card.id} card={card} />
                 )}

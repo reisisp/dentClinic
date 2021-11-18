@@ -1,7 +1,7 @@
 @import '../../../styles/mixins';
 @import '../../../styles/colors';
 
-.card-box {
+.box {
     @include box(360px, 260px);
 }
 

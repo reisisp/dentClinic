@@ -1,7 +1,7 @@
 @import '../../../styles/mixins';
 @import '../../../styles/colors';
 
-.aboutUs-box {
+.box {
     padding: 100px 140px;
     @include grid-row(2, 72px);
     grid-template-columns: max-content;

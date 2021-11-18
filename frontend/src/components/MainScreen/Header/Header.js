@@ -1,5 +1,6 @@
 import React from 'react';
-import './Header.scss'
+import cn from 'classnames';
+import styles from './Header.module.scss';
 
 
 export const Header = () => {
@@ -14,23 +15,23 @@ export const Header = () => {
     const imgPath = (imgName) => require(`../../../assets/img/${imgName}`).default;
 
     return (
-        <div className='header-container'>
-            <header className='header'>
-                <a href='/' className='header__logo'>
-                    <img src={imgPath('logo/white.svg')} alt='logo' className='logo__img' />
+        <div className={styles.container}>
+            <header className={styles.header}>
+                <a href='/' className={styles.header__logo}>
+                    <img src={imgPath('logo/white.svg')} alt='logo' className={styles.logo__img} />
                 </a>
-                <nav className='nav'>
+                <nav className={styles.nav}>
                     {links.map(link =>
-                        <a href={link.path} className='nav__link' key={link.id}>
-                            <span className='nav__text'>{link.name}</span>
+                        <a href={link.path} className={styles.nav__link} key={link.id}>
+                            <span className={styles.nav__text}>{link.name}</span>
                         </a>
                     )}
                 </nav>
-                <div className='header__phone phone'>
-                    <img className='phone__img' src={imgPath('customIcons/phone.svg')} alt='phone' />
-                    <p className='phone__number'>+7&nbsp;(962)&nbsp;922&nbsp;6115</p>
+                <div className={cn(styles.header__phone, styles.phone)}>
+                    <img className={styles.phone__img} src={imgPath('customIcons/phone.svg')} alt='phone' />
+                    <p className={styles.phone__number}>+7&nbsp;(962)&nbsp;922&nbsp;6115</p>
                 </div>
             </header>
         </div>
     );
-};
+}

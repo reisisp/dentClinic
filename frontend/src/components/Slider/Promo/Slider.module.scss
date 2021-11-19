@@ -1,0 +1,35 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.box {
+    padding-top: 100px;
+    margin: 100px 140px;
+}
+
+.slider {
+    margin: 72px 0 42px 0;
+    overflow: hidden;
+    &__box {
+        @include grid-column(3, 40px);
+        overflow: hidden;
+    }
+    &__name {
+        @include text(3rem, 700, 56px, $header);
+        text-align: start;
+    }
+}
+
+.slide {
+    &__next {
+        // background: green;
+        transform: translateX(-800px);
+    }
+    &__prev {
+        // background: olive;
+        transform: translateX(-800px);
+    }
+    &__active {
+        // background: red;
+        transform: translateX(-800px);
+    }
+}

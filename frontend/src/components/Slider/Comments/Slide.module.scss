@@ -1,0 +1,48 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.box {
+    display: inline-block;
+    @include box(712px, 293px);
+    @include border-radius(2px);
+    background: $background;
+    padding: 48px;
+    box-shadow: 0px 4px 20px $comment-shadow;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-column-gap: 31px;
+    &__img {
+        @include box(140px);
+        display: inline-block;
+        object-fit: cover;
+        & img {
+            @include box(100%);
+        }
+    }
+    &__content {
+        @include grid-row(2, 24px);
+        position: relative;
+        overflow: auto;
+        max-width: 493px;
+    }
+}
+
+.name {
+    @include text(1.5rem, 700, 29px, $header);
+}
+
+.comment {
+    @include text(1rem, 400, 24px, $p-main);
+}
+
+.date {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    &__text {
+        @include text(1rem, 400, 24px, $date);
+    }
+}

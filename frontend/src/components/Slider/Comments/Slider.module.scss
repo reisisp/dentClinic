@@ -1,0 +1,17 @@
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+
+.box {
+    padding: 140px;
+    display: grid;
+    grid-row-gap: 72px;
+    overflow: hidden;
+}
+
+.heading {
+    @include text(3rem, 700, 56px, $header);
+}
+
+.slider__cards {
+    @include grid-column(2, 40px);
+}

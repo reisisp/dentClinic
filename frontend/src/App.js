@@ -5,7 +5,9 @@ import { FeedbackForm } from './components/FeedbackForm/FeedbackForm';
 import { Footer } from './components/Footer/Footer';
 import { MainScreen } from './components/MainScreen/MainScreen';
 import { PriceList } from './components/PriceList/PriceList';
-// import { Slider } from './components/PromoSlider/Slider';
+import { Slider as CommentsSlider } from './components/Slider/Comments/Slider';
+import { Slider as DoctorsSlider } from './components/Slider/Doctors/Slider';
+import { Slider as PromoSlider } from './components/Slider/Promo/Slider';
 import './styles/App.scss';
 
 function App() {
@@ -14,9 +16,11 @@ function App() {
       <div className='container'>
         <MainScreen />
         <AboutUs />
-        {/* <Slider /> */}
+        <PromoSlider />
         <PriceList />
         <FeedbackForm />
+        <DoctorsSlider />
+        <CommentsSlider />
         <Contacts />
       </div>
       <Footer />

@@ -1,5 +1,5 @@
-@import "../../styles/colors";
 @import "../../styles/mixins";
+@import "../../styles/fonts";
 
 .box {
     padding: 100px 140px;
@@ -9,7 +9,7 @@
     display: grid;
     grid-row-gap: 72px;
     &__heading {
-        @include text(3rem, 700, 56px, $header);
+        @include heading;
     }
     &__panel {
         display: grid;

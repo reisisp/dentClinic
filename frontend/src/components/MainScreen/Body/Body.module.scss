@@ -1,14 +1,15 @@
-@import '../../../styles/mixins';
-@import '../../../styles/colors';
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .card {
     @include grid-row(3, 24px);
     grid-template-columns: max-content;
     &__name {
-        @include text(1.5rem, 700, 29px, $main-page-secondary);
+        @include heading-mainscreen;
     }
     &__slogan {
-        @include text(4.5rem, 700, 86px, $main-page);
+        @include slogan;
     }
 }
 

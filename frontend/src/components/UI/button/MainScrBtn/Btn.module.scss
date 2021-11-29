@@ -1,0 +1,17 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/colors';
+@import '../../../../styles/fonts';
+
+.btn {
+    padding: 20px 24px;
+    @include border-radius(40px);
+    cursor: pointer;
+    width: max-content;
+    background-color: $btn-bg-secondary;
+    &:hover {
+        background-color: $btn-hov-secondary;
+    }
+    &__text {
+        @include btn-txt-secondary;
+    }
+}

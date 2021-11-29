@@ -1,41 +1,57 @@
-$background: #fff;
-$background-footer: #f1f1f1;
-$footer: #f1f1f1;
-$comment-shadow: rgba(126, 120, 141, 0.15);
-/*text-colors*/
-$date: #a6acbb;
-$p-main: #38374e;
-$p-footer: #a6acbb;
-$link-footer: #a6acbb;
-$link-footer-hov: #0037d8;
-$link-footer-act: #0033ca;
-$header: #020131;
-$wrong: #d50059;
+$bg: #fff;
+$bg-footer: #f1f1f1;
+
 $invisible: rgba(0, 0, 0, 0);
-$btn: #0033ca;
-$btn-promo: #fff;
-$main-page: #fff;
-$main-page-secondary: #f1f1f1;
-/*btn-colors*/
-$btn-main: #0037d8;
-$btn-background: #fff;
-$btn-background-hov: #f1f1f1;
-$btn-promo-background: #0037d8;
-$btn-promo-background-hov: #1a4bdc;
-$btn-promo-background-active: #0033ca;
-$btn-pricelist-hov: #0037d8;
-$btn-pricelist-active: #0033ca;
-$btn-pricelist-text: #0037d8;
-$btn-pricelist-border: #0037d8;
-$btn-pricelist-text-hov: #fff;
-/*input */
+
+$table-grad: #fff;
+$comment-shadow: rgba(126, 120, 141, 0.15);
+
+/*TEXT*/
+$content: #38374e;
+$content-mainscreen: #f1f1f1;
+$content-nav: #fff;
+$content-footer: #a6acbb;
+$heading: #020131;
+$heading-mainscreen: #f1f1f1;
+$slogan: #fff;
+$comment-date: #a6acbb;
+
+/*LINKS*/
+$link: #fff;
+$link-footer: #a6acbb;
+$link-hov: #0037d8;
+$link-act: #0033ca;
+$link-underline: #fff;
+
+/*BTN*/
+// default
+$btn-txt: #fff;
+$btn-bg: #0037d8;
+$btn-hov: #1a4bdc;
+$btn-active: #0033ca;
+// mainscreen
+$btn-txt-secondary: #0037d8;
+$btn-bg-secondary: #fff;
+$btn-hov-secondary: #f1f1f1;
+// radio
+$radio-bg: #fff;
+$radio-border: #0037d8;
+$radio-txt-hover: #fff;
+$radio-bg-hov: #0037d8;
+
+/*INPUT*/
 $input-ph: #a6acbb;
 $input-txt: #38374e;
-$input-border: #0037D8;
-/*scroll-bar*/
+$input-border: #a6acbb;
+$input-focus: #0037d8;
+$wrong: #d50059;
+
+/*SCROLL-BAR*/
 $track: #f1f1f1;
 $thumb: #ffffff;
 $thumb-hover: #f1f1f1;
 $thumb-shadow: rgba(126, 120, 141, 0.15);
+
 /*SVG*/
-$svg-blue: #0037d8;
+$svg-primary: #fff;
+$svg-secondary: #0037d8;

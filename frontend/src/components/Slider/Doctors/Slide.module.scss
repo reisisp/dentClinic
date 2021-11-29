@@ -1,10 +1,11 @@
 @import "../../../styles/mixins";
 @import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .box {
     display: inline-block;
     @include box(400px, 602px);
-    background: $background;
+    background: $bg;
     box-shadow: 0px 4px 20px $comment-shadow;
 }
 
@@ -27,13 +28,13 @@
 }
 
 .name {
-    @include text(1.5rem, 700, 29px, $header);
+    @include heading-comment;
     text-align: center;
     white-space: pre-line;
 }
 
 .comment {
-    @include text(1rem, 400, 24px, $p-main);
+    @include content;
     text-align: center;
     white-space: pre-line;
 }

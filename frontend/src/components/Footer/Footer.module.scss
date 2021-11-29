@@ -1,8 +1,9 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
+@import "../../styles/fonts";
 
 .box {
-    background-color: $background-footer;
+    background-color: $bg-footer;
     height: 416px;
 }
 
@@ -37,14 +38,14 @@
     @include grid-row(5, 24px);
     &__link {
         &:hover .nav__text {
-            color: $link-footer-hov;
+            color: $link-hov;
         }
         &:active .nav__text {
-            color: $link-footer-act;
+            color: $link-act;
         }
     }
     &__text {
-        @include text(1rem, 500, 24px, $link-footer);
+        @include link-footer;
     }
 }
 
@@ -66,5 +67,5 @@
 }
 
 .text {
-    @include text(1rem, 400, 24px, $p-footer);
+    @include content-footer;
 }

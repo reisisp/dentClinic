@@ -1,5 +1,5 @@
 @import "../../../styles/mixins";
-@import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .box {
     padding: 140px;
@@ -9,7 +9,7 @@
 }
 
 .heading {
-    @include text(3rem, 700, 56px, $header);
+    @include heading;
 }
 
 .slider__cards {

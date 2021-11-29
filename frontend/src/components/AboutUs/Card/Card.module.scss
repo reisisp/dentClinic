@@ -1,5 +1,5 @@
-@import '../../../styles/mixins';
-@import '../../../styles/colors';
+@import "../../../styles/mixins";
+@import "../../../styles/fonts";
 
 .box {
     @include box(360px, 260px);
@@ -10,12 +10,11 @@
     @include grid-row(2, 24px, min-content);
     justify-items: center;
     &__img {
-        width: 140px;
-        height: 140px;
+        @include box(140px);
     }
     &__description {
-        @include text(1rem, 400,24px, $p-main);
-        white-space: pre-line;
+        @include content;
         text-align: center;
+        white-space: pre-line;
     }
 }

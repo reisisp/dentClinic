@@ -1,5 +1,5 @@
 import React from 'react';
-import { Btn } from '../../UI/button/Btn';
+import { Btn } from '../../UI/button/MainScrBtn/Btn';
 import cn from 'classnames';
 import styles from './Body.module.scss';
 

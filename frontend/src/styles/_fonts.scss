@@ -1,1 +1,83 @@
+@import "./mixins";
+@import "./colors";
+
 $base-font-size: 16px;
+
+@mixin content {
+    @include text(1rem, 400, 24px, $content);
+}
+
+@mixin content-mainscreen {
+    @include content;
+    color: $content-mainscreen;
+}
+
+@mixin content-nav {
+    @include content;
+    color: $content-nav;
+}
+
+@mixin content-footer {
+    @include content;
+    color: $content-footer;
+}
+
+@mixin comment-date {
+    @include content;
+    color: $comment-date;
+}
+
+@mixin heading {
+    @include text(3rem, 700, 56px, $heading);
+}
+
+@mixin heading-comment {
+    @include text(1.5rem, 700, 29px, $heading);
+}
+
+@mixin heading-promo {
+    @include text(2.25rem, 700, 52px, $heading);
+}
+
+@mixin heading-mainscreen {
+    @include text(1.5rem, 700, 29px, $heading-mainscreen);
+}
+
+@mixin slogan {
+    @include text(4.5rem, 700, 86px, $slogan);
+}
+
+@mixin price {
+    @include text(1.5rem, 700, 24px, $heading);
+}
+
+@mixin link {
+    @include text(1rem, 500, 24px, $link);
+}
+
+@mixin link-footer {
+    @include link;
+    color: $link-footer;
+}
+
+@mixin input-ph {
+    @include text(1rem, 400, 24px, $input-ph);
+}
+
+@mixin input-text {
+    @include input-ph;
+    color: $input-txt;
+}
+
+@mixin btn-txt {
+    @include text(1rem, 500, 24px, $btn-txt);
+}
+
+@mixin btn-txt-secondary {
+    @include btn-txt;
+    color: $btn-txt-secondary;
+}
+
+@mixin radio-txt {
+    @include text(1.5rem, 700, 29px, $btn-txt-secondary);
+}

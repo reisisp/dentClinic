@@ -1,11 +1,12 @@
 @import "../../../styles/mixins";
 @import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .box {
     display: inline-block;
     @include box(712px, 293px);
     @include border-radius(2px);
-    background: $background;
+    background: $bg;
     padding: 48px;
     box-shadow: 0px 4px 20px $comment-shadow;
 }
@@ -31,11 +32,11 @@
 }
 
 .name {
-    @include text(1.5rem, 700, 29px, $header);
+    @include heading-comment;
 }
 
 .comment {
-    @include text(1rem, 400, 24px, $p-main);
+    @include content;
 }
 
 .date {
@@ -43,6 +44,6 @@
     top: 5px;
     right: 0;
     &__text {
-        @include text(1rem, 400, 24px, $date);
+        @include comment-date;
     }
 }

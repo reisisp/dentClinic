@@ -1,0 +1,29 @@
+@import "../../../../styles/mixins";
+@import "../../../../styles/colors";
+@import "../../../../styles/fonts";
+
+.btn {
+    padding: 24px 40px;
+    @include border-radius(40px);
+    border: 1px solid $radio-border;
+    cursor: pointer;
+    width: max-content;
+    background-color: $radio-bg;
+    &:hover,
+    &:active {
+        background-color: $radio-bg-hov;
+        & .btn__text {
+            color: $radio-txt-hover;
+        }
+    }
+    &__text {
+        @include radio-txt;
+    }
+}
+
+.active {
+    background-color: $radio-bg-hov;
+    & .btn__text {
+        color: $radio-txt-hover;
+    }
+}

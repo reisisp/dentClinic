@@ -1,5 +1,6 @@
 @import "../../styles/colors";
 @import "../../styles/mixins";
+@import "../../styles/fonts";
 
 .box {
     margin: 113px 120px;
@@ -35,9 +36,9 @@
 }
 
 .heading {
-    @include text(3rem, 700, 56px, $header);
+    @include heading;
 }
 
 .text {
-    @include text(1rem, 400, 24px, $p-main);
+    @include content;
 }

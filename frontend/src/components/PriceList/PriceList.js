@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Btn } from '../UI/button/PriceListBtn/Btn';
+import { Btn } from '../UI/button/PriceListRadioBtn/Btn';
 import { Table } from './Table/Table';
 import styles from './PriceList.module.scss'
 

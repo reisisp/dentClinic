@@ -1,16 +1,16 @@
 @import "../../../../styles/colors";
 @import "../../../../styles/mixins";
+@import "../../../../styles/fonts";
 
 .input {
     width: 100%;
     padding: 12px;
     border-bottom: 1px solid $input-border;
-    @include text(1rem, 400, 24px, $input-txt);
+    @include input-text;
     @include placeholder {
-        @include text(1rem, 400, 24px, $input-ph);
+        @include input-ph;
     }
-    // &:focus {
-    //     padding: 14px 14px 13px 14px;
-    //     border: 2px solid red;
-    // }
+    &:focus {
+        border-bottom: 1px solid $input-focus;
+    }
 }

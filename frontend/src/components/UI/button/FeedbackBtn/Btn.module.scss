@@ -1,18 +1,19 @@
 @import "../../../../styles/mixins";
 @import "../../../../styles/colors";
+@import "../../../../styles/fonts";
 
 .btn {
     padding: 20px 0;
     @include border-radius(40px);
     cursor: pointer;
-    background-color: $btn-promo-background;
+    background-color: $btn-bg;
     &:hover {
-        background-color: $btn-promo-background-hov;
+        background-color: $btn-hov;
     }
     &:active {
-        background-color: $btn-promo-background-active;
+        background-color: $btn-active;
     }
     &__text {
-        @include text(1rem, 500, 24px, $btn-promo);
+        @include btn-txt;
     }
 }

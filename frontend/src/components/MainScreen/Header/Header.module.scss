@@ -1,6 +1,6 @@
-@import '../../../styles/mixins';
-@import '../../../styles/colors';
-
+@import "../../../styles/mixins";
+@import "../../../styles/colors";
+@import "../../../styles/fonts";
 
 .container {
     padding: 50px 120px;
@@ -25,17 +25,17 @@
     &__link {
         border-bottom: 1px solid $invisible;
         &:hover {
-            border-bottom: 1px solid $main-page;
+            border-bottom: 1px solid $link-underline;
         }
         &:active {
-            border-bottom: 1px solid $btn;
+            border-bottom: 1px solid $link-act;
             & .nav__text {
-                color: $btn;
+                color: $link-act;
             }
         }
     }
     &__text {
-        @include text(1rem, 500, 24px, $main-page);
+        @include link;
     }
 }
 
@@ -45,6 +45,6 @@
         @include box(16px);
     }
     &__number {
-        @include text(1rem, 400, 24px, $main-page);
+        @include content-nav;
     }
 }

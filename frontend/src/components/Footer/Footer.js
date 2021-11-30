@@ -3,11 +3,11 @@ import styles from './Footer.module.scss'
 
 export const Footer = () => {
     const links = [
-        { id: 1, path: '/', name: 'Акции' },
-        { id: 2, path: '/', name: 'Услуги и цены' },
-        { id: 3, path: '/', name: 'Наши врачи' },
-        { id: 4, path: '/', name: 'Отзывы' },
-        { id: 5, path: '/', name: 'Контакты' }
+        { id: 1, path: '#promo', name: 'Акции' },
+        { id: 2, path: '#pricelist', name: 'Услуги и цены' },
+        { id: 3, path: '#doctors', name: 'Наши врачи' },
+        { id: 4, path: '#comments', name: 'Отзывы' },
+        { id: 5, path: '#contacts', name: 'Контакты' }
     ]
 
     const imgPath = (imgName) => require(`../../assets/img/${imgName}`).default;

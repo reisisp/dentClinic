@@ -1,5 +1,6 @@
 @import "../../../styles/mixins";
 @import "../../../styles/fonts";
+@import "../../../styles/colors";
 
 .box {
     padding: 140px;
@@ -14,4 +15,9 @@
 
 .slider__cards {
     @include grid-column(2, 40px);
+}
+
+.btn {
+    cursor: pointer;
+    background: $invisible;
 }

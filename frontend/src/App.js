@@ -16,12 +16,12 @@ function App() {
       <div className='container'>
         <MainScreen />
         <AboutUs />
-        <PromoSlider />
-        <PriceList />
+        <PromoSlider id='promo' />
+        <PriceList id='pricelist'/>
         <FeedbackForm />
-        <DoctorsSlider />
-        <CommentsSlider />
-        <Contacts />
+        <DoctorsSlider id='doctors' />
+        <CommentsSlider id='comments'/>
+        <Contacts id='contacts'/>
       </div>
       <Footer />
     </div>

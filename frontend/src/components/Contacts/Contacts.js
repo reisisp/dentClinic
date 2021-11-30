@@ -3,12 +3,12 @@ import { GMap } from "./Map/GMap";
 import styles from './Contacts.module.scss'
 
 
-export const Contacts = () => {
+export const Contacts = ({ ...props }) => {
     // const imgPath = (imgName) => require(`../../assets/img/customIcons/${imgName}`).default;
 
 
     return (
-        <div className={styles.box}>
+        <div {...props} className={styles.box}>
             <div className={styles.contacts}>
                 <h1 className={styles.contacts__heading}>Контакты</h1>
                 <div className={styles.contacts__elems}>

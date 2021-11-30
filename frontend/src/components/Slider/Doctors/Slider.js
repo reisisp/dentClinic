@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Slide } from './Slide';
+import right_arr from '../../../assets/img/customIcons/arr-right.svg';
+import left_arr from '../../../assets/img/customIcons/arr-left.svg';
 import styles from './Slider.module.scss';
 // import cn from 'classnames';
 
 
-export const Slider = () => {
+export const Slider = ({...props}) => {
     const imgPath = (imgName) => require(`../../../assets/img/doctors/${imgName}`).default;
     const slides = [
         {
@@ -46,7 +48,7 @@ export const Slider = () => {
 
 
     return (
-        <div className={styles.box}>
+        <div {...props} className={styles.box}>
             <h1 className={styles.heading}>Наши врачи</h1>
             <div className={styles.slider}>
                 <div className={styles.slider__cards}>
@@ -54,16 +56,18 @@ export const Slider = () => {
                     <Slide slide={slides[current]} />
                     <Slide slide={slides[next]} />
                 </div>
-                <div className={styles.btns}>
+                <div>
                     <button
+                        className={styles.btn}
                         onClick={prevSlide}
                     >
-                        {`<`}
+                        <img src={left_arr} alt="left" />
                     </button>
                     <button
+                        className={styles.btn}
                         onClick={nextSlide}
                     >
-                        {`>`}
+                        <img src={right_arr} alt="right" />
                     </button>
                 </div>
             </div>

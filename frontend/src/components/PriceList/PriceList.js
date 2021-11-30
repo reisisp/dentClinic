@@ -5,7 +5,7 @@ import styles from './PriceList.module.scss'
 
 
 
-export const PriceList = () => {
+export const PriceList = ({ ...props }) => {
     const services = [
         {
             id: 1, name: 'Терапия',
@@ -164,9 +164,9 @@ export const PriceList = () => {
         setActive(services.find(service => service.id === +event.currentTarget.value).id);
 
     }
-    
+
     return (
-        <div className={styles.box}>
+        <div {...props} className={styles.box}>
             <div className={styles.pricelist}>
                 <h1 className={styles.pricelist__heading}>Услуги и&nbsp;цены</h1>
                 <div className={styles.pricelist__panel}>

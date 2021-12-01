@@ -1,4 +1,5 @@
 import React from "react";
+import { Logo } from "../UI/logo/Logo";
 import styles from './Footer.module.scss'
 
 export const Footer = () => {
@@ -17,9 +18,10 @@ export const Footer = () => {
             <div className={styles.wrapper}>
                 <footer className={styles.footer}>
                     <div className={styles.footer__info}>
-                        <a href='/' className={styles.footer__logo}>
+                        <Logo colour='blue' />
+                        {/* <a href='/' className={styles.footer__logo}>
                             <img src={imgPath('logo/blue.svg')} alt='logo' className={styles.logo} />
-                        </a>
+                        </a> */}
                         <p className={styles.text}>Стоматология&nbsp;«Зубная&nbsp;формула»<br />ООО&nbsp;«Монтерекс»</p>
                     </div>
                     <div className={styles.footer__nav}>

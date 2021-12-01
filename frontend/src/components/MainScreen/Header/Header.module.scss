@@ -8,16 +8,9 @@
 
 .header {
     @include grid-column(3, 138px);
-    &__logo {
-        @include box(179px, 60px);
-    }
     &__phone {
         margin-left: 22px;
     }
-}
-
-.logo__img {
-    @include box(100%);
 }
 
 .nav {

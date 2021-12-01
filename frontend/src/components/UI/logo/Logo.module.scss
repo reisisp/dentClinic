@@ -1,0 +1,14 @@
+@import "../../../styles/mixins";
+@import "../../../styles/params";
+
+.logo {
+    display: block;
+    height: 100%;
+    &__link {
+        display: inline-block;
+        height: 60px;
+        @media (max-width: ($mobile + "px")) {
+            height: 34px;
+        }
+    }
+}

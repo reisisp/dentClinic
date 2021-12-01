@@ -1,6 +1,7 @@
 import React from 'react';
 import cn from 'classnames';
 import styles from './Header.module.scss';
+import { Logo } from '../../UI/logo/Logo';
 
 
 export const Header = () => {
@@ -17,9 +18,7 @@ export const Header = () => {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
-                <a href='/' className={styles.header__logo}>
-                    <img src={imgPath('logo/white.svg')} alt='logo' className={styles.logo__img} />
-                </a>
+                <Logo colour='white' />
                 <nav className={styles.nav}>
                     {links.map(link =>
                         <a href={link.path} className={styles.nav__link} key={link.id}>
